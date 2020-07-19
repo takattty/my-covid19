@@ -3,11 +3,38 @@
     <div class="title">
       <h1>全国のCOVID-19データ</h1>
     </div>
-    <router-view />
+    <div id="body">
+      <Body></Body>
+    </div>
+    <div id="footer">
+      <Footer></Footer>
+    </div>
+    <!-- ここにbodyの要素を入れたい-->
   </div>
 </template>
 
+<script>
+import Body from "@/views/Body.vue";
+import Footer from "@/views/Footer.vue";
+
+export default {
+  components: {
+    Body,
+    Footer
+  }
+};
+</script>
+
 <style>
+.content {
+  text-align: center;
+  border-bottom-color: solid;
+}
+
+.body {
+  border-top: 1px solid;
+}
+
 .title {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

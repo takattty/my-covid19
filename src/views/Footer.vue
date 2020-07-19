@@ -1,19 +1,19 @@
 <template>
-  <div class="home">button</div>
+  <div class="FooterContent">
+    <p>footer pages</p>
+  </div>
 </template>
 
-<script>
-export default {
-  name: "Home"
-};
-</script>
+<script></script>
 
 <style>
-.home {
+.FooterContent {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 200px;
+  background-color: rgb(148, 186, 243);
 }
 </style>
