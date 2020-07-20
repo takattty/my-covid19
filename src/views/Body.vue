@@ -34,7 +34,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: aliceblue;
-  margin: 0 400px;
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
 }
 
 .Select {
