@@ -1,6 +1,6 @@
 <template>
   <el-card class="box-card">
-    <div v-for="o in 4" :key="o" class="text item">
+    <div v-for="o in 3" :key="o" class="text item">
       {{ "List item " + o }}
     </div>
   </el-card>
@@ -19,6 +19,12 @@
 }
 
 .box-card {
-  margin: 20px 100px;
+  margin: 50px 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .box-card {
+    margin: 20px 10px;
+  }
 }
 </style>

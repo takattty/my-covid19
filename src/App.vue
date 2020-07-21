@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="title">
-      <h1>全国のCOVID-19データ</h1>
+      <h1>全国の<br />COVID-19データ</h1>
     </div>
     <div id="body">
       <Body></Body>
@@ -33,6 +33,7 @@ export default {
 
 .body {
   border-top: 1px solid;
+  margin: 0;
 }
 
 .title {
@@ -42,6 +43,15 @@ export default {
   text-align: center;
   color: #ff0606;
   font-size: 30px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.459);
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 #nav {

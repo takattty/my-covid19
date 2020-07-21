@@ -20,6 +20,10 @@ export default {
     return {
       options: [
         {
+          value: "0",
+          label: "全国"
+        },
+        {
           value: "1",
           label: "北海道"
         },
