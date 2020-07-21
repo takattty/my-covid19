@@ -33,8 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  border-radius: 5px;
-  padding-top: 15px 0;
+  border-radius: 4px;
   width: 90%;
   max-width: 950px;
   margin: auto;

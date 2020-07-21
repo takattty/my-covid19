@@ -34,6 +34,7 @@ export default {
 .body {
   margin: 0;
   background-color: aliceblue;
+  padding: 30px 0;
 }
 
 .title {
@@ -47,6 +48,9 @@ export default {
 }
 
 @media screen and (max-width: 700px) {
+  .body {
+    padding: 0;
+  }
   .title {
     font-size: 15px;
     margin-bottom: 10px;
