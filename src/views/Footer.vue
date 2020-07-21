@@ -26,11 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: rgba(243, 148, 211, 0.521);
   font-size: 35px;
   padding-top: 5px;
   padding-bottom: 25px;
-  margin-top: 25px;
+  border-top: 1px solid rgba(161, 161, 161, 0.459);
 }
 
 .FooterLink {

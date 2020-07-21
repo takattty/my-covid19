@@ -3,10 +3,10 @@
     <div class="title">
       <h1>全国の<br />COVID-19データ</h1>
     </div>
-    <div id="body">
+    <div class="body">
       <Body></Body>
     </div>
-    <div id="footer">
+    <div class="footer">
       <Footer></Footer>
     </div>
     <!-- ここにbodyの要素を入れたい-->
@@ -32,8 +32,8 @@ export default {
 }
 
 .body {
-  border-top: 1px solid;
   margin: 0;
+  background-color: aliceblue;
 }
 
 .title {
@@ -44,7 +44,6 @@ export default {
   color: #ff0606;
   font-size: 30px;
   border-bottom: 1px solid rgba(161, 161, 161, 0.459);
-  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 700px) {

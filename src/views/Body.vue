@@ -1,5 +1,5 @@
 <template>
-  <el-card class="BodyContent">
+  <div class="BodyContent">
     <div class="Select">
       <Select></Select>
     </div>
@@ -12,7 +12,7 @@
       <Data></Data>
       <Data></Data>
     </div>
-  </el-card>
+  </div>
 </template>
 
 <script>
@@ -28,16 +28,21 @@ export default {
 </script>
 
 <style>
-@import url("//unpkg.com/element-ui@2.13.2/lib/theme-chalk/index.css");
 .BodyContent {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: aliceblue;
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 15px 0;
   width: 90%;
   max-width: 950px;
   margin: auto;
+}
+
+.Select {
+  padding: 50px 0 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -45,11 +50,10 @@ export default {
     width: 100%;
     margin: auto;
   }
-}
 
-.Select {
-  padding: 30px 0 10px;
-  text-align: center;
+  .Select {
+    padding: 20px 0 10px;
+  }
 }
 
 .Data {
