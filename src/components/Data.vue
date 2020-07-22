@@ -1,7 +1,10 @@
 <template>
   <el-card class="box-card">
-    <div v-for="o in 3" :key="o" class="text item">
-      {{ "List item " + o }}
+    <div class="CardTitle">
+      <p>ここタイトル</p>
+    </div>
+    <div class="CardContent">
+      <p>ここ数値</p>
     </div>
   </el-card>
 </template>
@@ -10,12 +13,26 @@
 
 <style scoped>
 @import url("//unpkg.com/element-ui@2.13.2/lib/theme-chalk/index.css");
-.text {
-  font-size: 14px;
+
+.CardTitle {
+  background-color: rgba(137, 43, 226, 0.26);
 }
 
-.item {
-  padding: 18px 0;
+.CardTitle p {
+  margin: 0 0 10px;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #ae00ff;
+}
+
+.CardContent {
+  background-color: rgba(34, 139, 34, 0.425);
+}
+
+.CardContent p {
+  margin: 0;
+  padding: 15px;
+  font-size: 40px;
 }
 
 .box-card {

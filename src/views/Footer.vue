@@ -32,7 +32,7 @@
   border-top: 1px solid rgba(161, 161, 161, 0.459);
 }
 
-p {
+.FooterContent p {
   text-decoration: underline;
   text-decoration-color: #ae00ff;
 }
