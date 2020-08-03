@@ -1,5 +1,9 @@
 <template>
-  <el-select v-model="value" placeholder="Select">
+  <el-select
+    v-model="value"
+    placeholder="Select"
+    v-on:change="selectPrefectures"
+  >
     <el-option
       v-for="item in prefectures"
       :key="item.value"
@@ -216,8 +220,8 @@ export default {
     };
   },
   methods: {
-    select: function() {
-      console.log(this);
+    selectPrefectures() {
+      console.log(this.value);
     }
   }
 };
