@@ -1,7 +1,7 @@
 <template>
   <el-select v-model="value" placeholder="Select">
     <el-option
-      v-for="item in options"
+      v-for="item in prefectures"
       :key="item.value"
       :label="item.label"
       :value="item.value"
@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      options: [
+      prefectures: [
         {
           value: "0",
           label: "全国"
@@ -29,7 +29,7 @@ export default {
         },
         {
           value: "2",
-          label: "東京都"
+          label: "青森県"
         },
         {
           value: "3",
@@ -214,6 +214,11 @@ export default {
       ],
       value: ""
     };
+  },
+  methods: {
+    select: function() {
+      console.log(this);
+    }
   }
 };
 </script>
