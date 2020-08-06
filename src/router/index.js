@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Body from "../views/Body.vue";
+import axios from "axios";
 
 Vue.use(VueRouter);
+Vue.prototype.$axios = axios;
 
 const routes = [
   {

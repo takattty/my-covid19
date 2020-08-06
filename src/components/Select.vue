@@ -221,7 +221,28 @@ export default {
   },
   methods: {
     selectPrefectures() {
-      console.log(this.value);
+      const selectedValue = Number(this.value);
+      console.log(selectedValue);
+      if (selectedValue === 0) {
+        this.$axios
+          .get("https://covid19-japan-web-api.now.sh/api/v1/total")
+          .then(response => {
+            console.log(response.data);
+          })
+          .catch(err => {
+            console.error(err);
+          });
+      } else {
+        const prefecturesValues = selectedValue - 1;
+        this.$axios
+          .get("https://covid19-japan-web-api.now.sh/api/v1/prefectures")
+          .then(response => {
+            console.log(response.data[prefecturesValues]);
+          })
+          .catch(err => {
+            console.error(err);
+          });
+      }
     }
   }
 };
