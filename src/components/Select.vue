@@ -240,6 +240,7 @@ export default {
           .get("https://covid19-japan-web-api.now.sh/api/v1/prefectures")
           .then(response => {
             console.log(response.data[prefecturesValues]);
+            Store.resetPrefectureData();
             Store.setPrefectureData(response.data[prefecturesValues]);
             this.$router.push("/" + selectedValue);
           })

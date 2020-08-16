@@ -8,6 +8,9 @@ const Store = {
   },
   setPrefectureData(prefectureData) {
     this.state.apiData = prefectureData;
+  },
+  resetPrefectureData() {
+    this.state.apiData = {};
   }
 };
 
