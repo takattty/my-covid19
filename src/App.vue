@@ -4,22 +4,19 @@
       <h1>全国の<br />COVID-19データ</h1>
     </div>
     <div class="body">
-      <Body></Body>
+      <router-view />
     </div>
     <div class="footer">
       <Footer></Footer>
     </div>
-    <!-- ここにbodyの要素を入れたい-->
   </div>
 </template>
 
 <script>
-import Body from "@/views/Body.vue";
 import Footer from "@/views/Footer.vue";
 
 export default {
   components: {
-    Body,
     Footer
   }
 };

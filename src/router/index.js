@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Body from "../views/Body.vue";
+import Total from "../components/Total.vue";
+import Prefecture from "../components/Prefecture";
+// import Data from "../components/Data.vue";
 import axios from "axios";
 
 Vue.use(VueRouter);
@@ -9,8 +12,17 @@ Vue.prototype.$axios = axios;
 const routes = [
   {
     path: "/",
-    name: "Body", // 相手先の名前を記入する。
-    component: Body
+    component: Body,
+    children: [
+      {
+        path: "total",
+        component: Total
+      },
+      {
+        path: ":id",
+        component: Prefecture
+      }
+    ]
   }
   // {
   //   path: "/about",

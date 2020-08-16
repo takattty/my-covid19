@@ -9,8 +9,7 @@
       :key="item.value"
       :label="item.label"
       :value="item.value"
-    >
-    </el-option>
+    ></el-option>
   </el-select>
 </template>
 
@@ -19,6 +18,7 @@
 </style>
 
 <script>
+import Store from "../Store";
 export default {
   data() {
     return {
@@ -228,6 +228,8 @@ export default {
           .get("https://covid19-japan-web-api.now.sh/api/v1/total")
           .then(response => {
             console.log(response.data);
+            Store.setTotalData(response.data);
+            this.$router.push("/total");
           })
           .catch(err => {
             console.error(err);
@@ -238,6 +240,8 @@ export default {
           .get("https://covid19-japan-web-api.now.sh/api/v1/prefectures")
           .then(response => {
             console.log(response.data[prefecturesValues]);
+            Store.setPrefectureData(response.data[prefecturesValues]);
+            this.$router.push("/" + selectedValue);
           })
           .catch(err => {
             console.error(err);

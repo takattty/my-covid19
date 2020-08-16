@@ -4,17 +4,25 @@
       <Select></Select>
     </div>
     <div class="Data">
-      <router-view />
+      <Data></Data>
+      <Data></Data>
+      <Data></Data>
+      <Data></Data>
+      <Data></Data>
+      <Data></Data>
+      <Data></Data>
     </div>
   </div>
 </template>
 
 <script>
 import Select from "@/components/Select.vue";
+import Data from "@/components/Data.vue";
 
 export default {
   components: {
-    Select
+    Select,
+    Data
   }
 };
 </script>
