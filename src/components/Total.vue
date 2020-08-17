@@ -13,7 +13,7 @@
         <p>PCR検査人数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.pcr }}人</p>
+        <p>{{ totalData.pcr }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -21,7 +21,7 @@
         <p>入院者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.hospitalize }}人</p>
+        <p>{{ totalData.hospitalize }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -29,7 +29,7 @@
         <p>陽性者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.positive }}人</p>
+        <p>{{ totalData.positive }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -37,7 +37,7 @@
         <p>重症者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.severe }}人</p>
+        <p>{{ totalData.severe }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -45,7 +45,7 @@
         <p>退院者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.discharge }}人</p>
+        <p>{{ totalData.discharge }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -53,7 +53,7 @@
         <p>死亡者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ totalData.death }}人</p>
+        <p>{{ totalData.death }} 人</p>
       </div>
     </el-card>
   </div>
@@ -85,7 +85,7 @@ export default {
 }
 
 .CardContent {
-  background-color: rgba(34, 139, 34, 0.425);
+  background-color: rgba(91, 204, 91, 0.5);
 }
 
 .CardContent p {

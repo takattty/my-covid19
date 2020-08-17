@@ -13,7 +13,7 @@
         <p>PCR検査人数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.pcr }}</p>
+        <p>{{ prefectureData.pcr }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -21,7 +21,7 @@
         <p>入院者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.hospitalize }}</p>
+        <p>{{ prefectureData.hospitalize }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -29,7 +29,7 @@
         <p>陽性者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.cases }}</p>
+        <p>{{ prefectureData.cases }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -37,7 +37,7 @@
         <p>重症者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.severe }}</p>
+        <p>{{ prefectureData.severe }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -45,7 +45,7 @@
         <p>退院者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.discharge }}</p>
+        <p>{{ prefectureData.discharge }} 人</p>
       </div>
     </el-card>
     <el-card class="box-card">
@@ -53,7 +53,7 @@
         <p>死亡者数</p>
       </div>
       <div class="CardContent">
-        <p>{{ prefectureData.deaths }}</p>
+        <p>{{ prefectureData.deaths }} 人</p>
       </div>
     </el-card>
   </div>
@@ -62,10 +62,17 @@
 <script>
 import Store from "../Store";
 export default {
-  data() {
-    return {
-      prefectureData: Store.state.apiData
-    };
+  // data() {
+  //   console.log(Store.state.apiData);
+  //   return {
+  //     prefectureData: Store.state.apiData
+  //   };
+  // },
+  computed: {
+    prefectureData: function() {
+      console.log(Store.state.apiData);
+      return Store.state.apiData;
+    }
   }
 };
 </script>
@@ -85,7 +92,7 @@ export default {
 }
 
 .CardContent {
-  background-color: rgba(34, 139, 34, 0.425);
+  background-color: rgba(91, 204, 91, 0.5);
 }
 
 .CardContent p {

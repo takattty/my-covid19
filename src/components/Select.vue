@@ -18,7 +18,7 @@
 </style>
 
 <script>
-import Store from "../Store";
+import Store from "../Store.js";
 export default {
   data() {
     return {
@@ -240,8 +240,10 @@ export default {
           .get("https://covid19-japan-web-api.now.sh/api/v1/prefectures")
           .then(response => {
             console.log(response.data[prefecturesValues]);
-            Store.resetPrefectureData();
-            Store.setPrefectureData(response.data[prefecturesValues]);
+            // Store.resetPrefectureData();
+            // Store.setPrefectureData(response.data[prefecturesValues]);
+            Store.commit("resetPrefectureData");
+            Store.commit("setPrefectureData", response.data[prefecturesValues]);
             this.$router.push("/" + selectedValue);
           })
           .catch(err => {

@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Body from "../views/Body.vue";
 import Total from "../components/Total.vue";
 import Prefecture from "../components/Prefecture";
-// import Data from "../components/Data.vue";
 import axios from "axios";
 
 Vue.use(VueRouter);
