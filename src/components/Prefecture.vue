@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import Store from "../Store";
+import Store from "@/Store";
 export default {
   // data() {
   //   console.log(Store.state.apiData);
@@ -70,7 +70,7 @@ export default {
   // },
   computed: {
     prefectureData: function() {
-      console.log(Store.state.apiData);
+      // console.log(Store.state.apiData);
       return Store.state.apiData;
     }
   }

@@ -18,7 +18,7 @@
 </style>
 
 <script>
-import Store from "../Store.js";
+import Store from "@/Store.js";
 export default {
   data() {
     return {
@@ -222,13 +222,14 @@ export default {
   methods: {
     selectPrefectures() {
       const selectedValue = Number(this.value);
-      console.log(selectedValue);
+      // console.log(selectedValue);
       if (selectedValue === 0) {
         this.$axios
           .get("https://covid19-japan-web-api.now.sh/api/v1/total")
           .then(response => {
-            console.log(response.data);
-            Store.setTotalData(response.data);
+            // console.log(response.data);
+            // Store.setTotalData(response.data);
+            Store.commit("setTotalData", response.data);
             this.$router.push("/total");
           })
           .catch(err => {
@@ -239,7 +240,7 @@ export default {
         this.$axios
           .get("https://covid19-japan-web-api.now.sh/api/v1/prefectures")
           .then(response => {
-            console.log(response.data[prefecturesValues]);
+            // console.log(response.data[prefecturesValues]);
             // Store.resetPrefectureData();
             // Store.setPrefectureData(response.data[prefecturesValues]);
             Store.commit("resetPrefectureData");

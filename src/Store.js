@@ -13,12 +13,12 @@ const Store = new Vuex.Store({
     },
     setPrefectureData(state, prefectureData) {
       state.apiData = prefectureData;
-      console.log("success set Data");
-      console.log(state.apiData);
+      // console.log("success set Data");
+      // console.log(state.apiData);
     },
     resetPrefectureData(state) {
       state.apiData = {};
-      console.log("success reset Data");
+      // console.log("success reset Data");
     }
   }
 });
