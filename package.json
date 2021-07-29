@@ -11,6 +11,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.14.0",
     "element-ui": "^2.15.2",
+    "glob-parent": "^6.0.1",
     "highlight.js": "^10.7.3",
     "hosted-git-info": "^4.0.2",
     "is-svg": "^4.3.1",
