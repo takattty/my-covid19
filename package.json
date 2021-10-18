@@ -16,7 +16,7 @@
     "hosted-git-info": "^4.0.2",
     "is-svg": "^4.3.1",
     "node-forge": "^0.10.0",
-    "normalize-url": "^6.0.1",
+    "normalize-url": "^7.0.2",
     "postcss": "^8.3.9",
     "set-value": "4.1.0",
     "vue": "^2.6.14",
