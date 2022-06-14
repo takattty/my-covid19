@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "core-js": "^3.22.7",
+    "core-js": "^3.23.1",
     "element-ui": "^2.15.8",
     "glob-parent": "6.0.2",
     "highlight.js": "^11.5.1",
