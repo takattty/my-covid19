@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "core-js": "^3.22.7",
+    "core-js": "^3.24.1",
     "element-ui": "^2.15.8",
     "glob-parent": "6.0.2",
     "highlight.js": "^11.5.1",
@@ -24,7 +24,7 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.4",
+    "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.4",
     "@vue/cli-plugin-router": "~5.0.4",
     "@vue/cli-service": "~5.0.4",
