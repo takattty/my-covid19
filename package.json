@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.24.1",
-    "element-ui": "^2.15.8",
+    "element-ui": "^2.15.10",
     "glob-parent": "6.0.2",
     "highlight.js": "^11.5.1",
     "hosted-git-info": "^5.0.0",
